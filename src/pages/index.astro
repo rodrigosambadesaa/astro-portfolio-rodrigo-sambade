@@ -5,21 +5,27 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Portafolio de Rodrigo">
 	<main>
 		<header>
-			<h1>Portafolio de Rodrigo Sambade Saá</h1>
-			<img src="https://avatars.githubusercontent.com/u/43375046?v=4" alt="Foto de perfil" width="200" loading="lazy">
-			<p>Email: rodrigosambadesaa@gmail.com</p>
-			<p>Teléfono: +34608030077</p>
-			<p>Dirección: Avenida De Ferrol, 38, 2º B, 15706 Santiago de Compostela</p>
-			<p>Fecha de nacimiento: 14 de octubre de 1994</p>
-			<p>Lugar de nacimiento: Santiago de Compostela</p>
-			<p>Permiso de conducir: Permiso B</p>
-			<p>Género: Hombre</p>
-			<p>Nacionalidad: Española</p>
-			<p>Provincia: A Coruña</p>
-			<p>LinkedIn: <a id="enlaceLinkedin" href="https://linkedin.com/in/rodrigosambade-5675bb186">linkedin.com/in/rodrigosambade-5675bb186</a></p>
-			<p>DNI: 46094460E</p>
-			<p>Grado de discapacidad: 36%</p>
-			<a id="enlaceContacto" href="contacto">Contacto</a>
+			<nav style="text-align: right;">
+				<a class="enlaceNavbar" href="contacto">Contacto</a>
+			</nav>
+			<div>
+
+				<h1>Portafolio de Rodrigo Sambade Saá</h1>
+				<img src="https://avatars.githubusercontent.com/u/43375046?v=4" alt="Foto de perfil" width="200" loading="lazy">
+				<p>Email: rodrigosambadesaa@gmail.com</p>
+				<p>Teléfono: +34608030077</p>
+				<p>Dirección: Avenida De Ferrol, 38, 2º B, 15706 Santiago de Compostela</p>
+				<p>Fecha de nacimiento: 14 de octubre de 1994</p>
+				<p>Lugar de nacimiento: Santiago de Compostela</p>
+				<p>Permiso de conducir: Permiso B</p>
+				<p>Género: Hombre</p>
+				<p>Nacionalidad: Española</p>
+				<p>Provincia: A Coruña</p>
+				<p>LinkedIn: <a id="enlaceLinkedin" href="https://linkedin.com/in/rodrigosambade-5675bb186">linkedin.com/in/rodrigosambade-5675bb186</a></p>
+				<p>DNI: 46094460E</p>
+				<p>Grado de discapacidad: 36%</p>
+				<a id="enlaceContacto" href="contacto">Contacto</a>
+			</div>
 		</header>
 
 		<section id="idiomas">
@@ -109,11 +115,10 @@ import Layout from '../layouts/Layout.astro';
 		line-height: 1.6;
 		background-color: #f5f5f5;
 		color: #333;
-		padding: 20px;
 	}
 
-	#enlaceLinkedin, #enlaceContacto {
-		color: red;
+	#enlaceLinkedin, #enlaceContacto, .enlaceNavbar {
+		color: rgb(0, 0, 0);
 	}
 
 	header {

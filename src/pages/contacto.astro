@@ -3,7 +3,10 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Contacto">
-    <main>
+    <header>
+		<nav style="text-align: right;">
+			<a class="enlaceNavbar" href="index">Página principal</a>
+		</nav>
         <h1>Contacto</h1>
 
         <form method="POST" action="">
@@ -21,8 +24,7 @@ import Layout from "../layouts/Layout.astro";
             </div>
             <button type="submit">Enviar</button>
         </form>
-    </main>
-	<a id="enlacePrincipal" href="index">Página principal</a>
+    </header>
 </Layout>
 
 <style>
@@ -40,8 +42,8 @@ import Layout from "../layouts/Layout.astro";
 		padding: 20px;
 	}
 
-	#enlaceLinkedin, #enlaceContacto, #enlacePrincipal {
-		color: red;
+	#enlaceLinkedin, #enlaceContacto, .enlaceNavbar {
+		color: rgb(0, 0, 0);
 	}
 
 	header {
