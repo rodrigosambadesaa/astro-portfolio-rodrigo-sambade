@@ -3,26 +3,29 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Contacto">
-    <main tabindex="0">
-		<nav style="text-align: right;" tabindex="1">
-			<a class="enlaceNavbar" href="../" tabindex="2">Página principal</a>
+	<header>
+		<h1 tabindex="0">Portafolio de Rodrigo Sambade Saá</h1>
+	</header>
+    <main tabindex="1">
+		<nav style="text-align: right;" tabindex="2">
+			<a class="enlaceNavbar" href="../" tabindex="3">Página principal</a>
 		</nav>
-		<h1 tabindex="3">Contacto</h1>
+		<h1 tabindex="4">Contacto</h1>
 	
-		<form method="POST" action="" tabindex="4">
-			<div tabindex="5">
+		<form method="POST" action="" tabindex="5">
+			<div tabindex="6">
 				<label for="name">Nombre</label>
-				<input type="text" id="name" name="name" required aria-label="Nombre" tabindex="6">
+				<input type="text" id="name" name="name" required aria-label="Nombre" tabindex="7">
 			</div>
-			<div tabindex="7">
+			<div tabindex="8">
 				<label for="email">Correo</label>
-				<input type="email" id="email" name="email" required aria-label="Correo" tabindex="8">
+				<input type="email" id="email" name="email" required aria-label="Correo" tabindex="9">
 			</div>
-			<div tabindex="9">
+			<div tabindex="10">
 				<label for="message">Mensaje</label>
-				<textarea id="message" name="message" required aria-label="Mensaje" tabindex="10"></textarea>
+				<textarea id="message" name="message" required aria-label="Mensaje" tabindex="11"></textarea>
 			</div>
-			<button type="submit" tabindex="11">Enviar</button>
+			<button type="submit" tabindex="12">Enviar</button>
 		</form>
 	</main>
 	
@@ -62,6 +65,7 @@ import Layout from "../layouts/Layout.astro";
 
 	header h1 {
 		font-size: 2.5em;
+		color: white;
 	}
 
 	header p {
