@@ -29,7 +29,8 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <style>
-    /* Reset de estilos y estilos básicos */
+
+	/* Reset de estilos y estilos básicos */
 	body, h1, h2, h3, p, ul, li {
 		margin: 0;
 		padding: 0;
@@ -43,7 +44,8 @@ import Layout from "../layouts/Layout.astro";
 		padding: 20px;
 	}
 
-	#enlaceLinkedin, #enlaceContacto {
+	#enlaceLinkedin,
+	#enlaceContacto {
 		color: #f7fcf8;
 	}
 
@@ -98,42 +100,53 @@ import Layout from "../layouts/Layout.astro";
 	a {
 		color: #0077b6;
 		text-decoration: none;
+		cursor: pointer; /* Cambiar el cursor por defecto */
 	}
 
 	a:hover {
 		text-decoration: underline;
 	}
 
-    form {
-        margin-top: 20px;
-    }
+	/* Cambiar el cursor al pasar por encima de los enlaces y la imagen */
+	img {
+		cursor: pointer;
+	}
 
-    label {
-        display: block;
-        margin-bottom: 5px;
-        font-weight: bold;
-    }
+	/* Cambiar el cursor al pasar por encima */
+	img:hover {
+		cursor: pointer;
+	}
 
-    input[type="text"],
-    input[type="email"],
-    textarea {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-    }
+	form {
+		margin-top: 20px;
+	}
 
-    button[type="submit"] {
-        background-color: #0077b6;
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
+	label {
+		display: block;
+		margin-bottom: 5px;
+		font-weight: bold;
+	}
 
-    button[type="submit"]:hover {
-        background-color: #005b8a;
-    }
+	input[type="text"],
+	input[type="email"],
+	textarea {
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 10px;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+	}
+
+	button[type="submit"] {
+		background-color: #0077b6;
+		color: #fff;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	button[type="submit"]:hover {
+		background-color: #005b8a;
+	}
 </style>
