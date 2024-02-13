@@ -10,7 +10,7 @@ import Layout from '../layouts/Layout.astro';
 			</nav>
 			<div tabindex="2">
 				<h1 tabindex="3">Portafolio de Rodrigo Sambade Saá</h1>
-				<img src="https://avatars.githubusercontent.com/u/43375046?v=4" alt="Foto de perfil" width="200" loading="lazy" tabindex="4">
+				<img class="responsive" src="https://avatars.githubusercontent.com/u/43375046?v=4" alt="Foto de perfil" width="200" loading="lazy" tabindex="4">
 				<p tabindex="5">Email: <a id="enlaceEmail" href="mailto:rodrigosambadesaa@gmail.com">rodrigosambadesaa@gmail.com</a></p>
 				<p tabindex="6">Teléfono: <a id="enlaceTelefono" href="tel:+34608030077">+34608030077</a></p>
 				<p tabindex="7">Dirección: Avenida De Ferrol, 38, 2º B, 15706 Santiago de Compostela</p>
@@ -172,6 +172,12 @@ import Layout from '../layouts/Layout.astro';
     img:hover {
         transform: scale(1.05); /* Aumenta ligeramente el tamaño al hacer hover */
     }
+
+	@media only screen and (max-width: 480px) {
+		img {
+			width: 75%;
+		}
+	}
 
 </style>
 
