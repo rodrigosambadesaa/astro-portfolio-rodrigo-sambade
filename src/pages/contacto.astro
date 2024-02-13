@@ -12,26 +12,29 @@ import Layout from "../layouts/Layout.astro";
 	<main tabindex="4">
 		<h1 tabindex="5">Contacto</h1>
 
-		<form method="POST" action="" tabindex="6">
-			<fieldset tabindex="7">
-				<legend></legend>
-				<div tabindex="8">
-					<label for="name" tabindex="9">Nombre</label>
-					<input type="text" id="name" name="name" required aria-label="Nombre" tabindex="10">
-				</div>
-				<div tabindex="11">
-					<label for="email" tabindex="12">Correo</label>
-					<input type="email" id="email" name="email" required aria-label="Correo" tabindex="13">
-				</div>
-				<div tabindex="14">
-					<label for="message" tabindex="15">Mensaje</label>
-					<textarea id="message" name="message" required aria-label="Mensaje" tabindex="16"></textarea>
-				</div>
-			</fieldset>
-			<fieldset tabindex="17">
-				<button type="submit" tabindex="18">Enviar</button>
-			</fieldset>
-		</form>
+		<div style="max-width: 75%">
+			<form method="POST" action="" tabindex="6">
+				<fieldset tabindex="7">
+					<legend></legend>
+					<div tabindex="8">
+						<label for="name" tabindex="9">Nombre</label>
+						<input type="text" id="name" name="name" required aria-label="Nombre" tabindex="10">
+					</div>
+					<div tabindex="11">
+						<label for="email" tabindex="12">Correo</label>
+						<input type="email" id="email" name="email" required aria-label="Correo" tabindex="13">
+					</div>
+					<div tabindex="14">
+						<label for="message" tabindex="15">Mensaje</label>
+						<textarea id="message" name="message" required aria-label="Mensaje" tabindex="16"></textarea>
+					</div>
+				</fieldset>
+				<fieldset tabindex="17">
+					<button type="submit" tabindex="18">Enviar</button>
+				</fieldset>
+			</form>
+		</div>
+
 	</main>
 	
 </Layout>
