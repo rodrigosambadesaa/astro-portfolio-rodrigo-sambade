@@ -3,58 +3,58 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Contacto">
-	<header>
-		<nav style="text-align: right;" tabindex="2">
-			<a class="enlaceNavbar" href="../" tabindex="3">Página principal</a>
+	<header tabindex="0">
+		<nav style="text-align: right;" tabindex="1">
+			<a class="enlaceNavbar" href="../" tabindex="2">Página principal</a>
 		</nav>
-		<h1 tabindex="1">Portafolio de Rodrigo Sambade Saá</h1>
+		<h1 tabindex="3">Portafolio de Rodrigo Sambade Saá</h1>
 	</header>
 	<main tabindex="4">
 		<h1 id="cabeceraContacto" tabindex="5">Contacto</h1>
 
-		<div id="form-container">
+		<div tabindex="6" id="form-container">
 			<form
 				method="POST"
 				action="https://formsubmit.co/rodrigosambadesaa@gmail.com"
-				tabindex="6"
+				tabindex="7"
 			>
-				<fieldset tabindex="7">
-					<legend>Datos necesarios</legend>
-					<div tabindex="8">
-						<label for="name" tabindex="9">Nombre</label>
+				<fieldset tabindex="8">
+					<legend tabindex="9">Datos necesarios</legend>
+					<div tabindex="10">
+						<label for="name" tabindex="10">Nombre</label>
 						<input
 							type="text"
 							id="name"
 							name="name"
 							required
 							aria-label="Nombre"
-							tabindex="10"
+							tabindex="11"
 						/>
 					</div>
-					<div tabindex="11">
-						<label for="email" tabindex="12">Correo</label>
+					<div tabindex="12">
+						<label for="email" tabindex="13">Correo</label>
 						<input
 							type="email"
 							id="email"
 							name="email"
 							required
 							aria-label="Correo"
-							tabindex="13"
+							tabindex="14"
 						/>
 					</div>
-					<div tabindex="14">
-						<label for="message" tabindex="15">Mensaje</label>
+					<div tabindex="15">
+						<label for="message" tabindex="16">Mensaje</label>
 						<textarea
 							id="message"
 							name="message"
 							required
 							aria-label="Mensaje"
-							tabindex="16"></textarea>
+							tabindex="17"></textarea>
 					</div>
 				</fieldset>
-				<fieldset tabindex="17">
+				<fieldset tabindex="18">
 					<legend>Enviar</legend>
-					<button type="submit" tabindex="18">Enviar</button>
+					<input type="submit" tabindex="19" value="Enviar"></input>
 				</fieldset>
 			</form>
 		</div>
@@ -230,11 +230,11 @@ import Layout from "../layouts/Layout.astro";
 		border: none;
 	}	
 
-	button[type="submit"]:hover {
+	input[type="submit"]:hover {
 		background-color: #005b8a;
 	} 
 
-	button[type="submit"] {
+	input[type="submit"] {
 		background-color: #0077b6;
 		color: #fff;
 		padding: 10px 20px;
@@ -300,6 +300,6 @@ import Layout from "../layouts/Layout.astro";
 	}
 
 	input[type="submit"]:hover {
-		background-color: #FF8C66;
+		background-color: #2579a9;
 	}
 </style>
