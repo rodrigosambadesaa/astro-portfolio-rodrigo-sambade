@@ -4,8 +4,8 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Contacto">
 	<header tabindex="0">
-		<nav tabindex="1" style="text-align: right;">
-			<a class="enlaceNavbar" href="../">Página principal</a>
+		<nav style="text-align: right;" tabindex="1">
+			<a class="enlaceNavbar" href="../" tabindex="2">Página principal</a>
 		</nav>
 		<h1 tabindex="2">Portafolio de Rodrigo Sambade Saá</h1>
 	</header>
@@ -16,6 +16,7 @@ import Layout from "../layouts/Layout.astro";
 			<form
 				method="POST"
 				action="https://formsubmit.co/rodrigosambadesaa@gmail.com"
+				tabindex="7"
 			>
 				<fieldset>
 					<legend>Datos necesarios</legend>
@@ -92,6 +93,10 @@ import Layout from "../layouts/Layout.astro";
 		padding: 20px;
 	}
 
+	#menuNavegacion {
+		text-align: right;
+	}
+
 	#enlaceLinkedin,
 	#enlaceContacto {
 		color: #f7fcf8;
@@ -132,8 +137,10 @@ import Layout from "../layouts/Layout.astro";
 
 	h2 {
 		/* font-size: 1.8em; */
-		margin-bottom: 10px;
 		color: #0077b6;
+		text-align: center;
+		margin-bottom: 30px;
+		color: #333;
 	}
 
 	ul {
@@ -170,58 +177,10 @@ import Layout from "../layouts/Layout.astro";
 	img:hover {
 		cursor: pointer;
 	}
-
+	
 	#cabeceraContacto {
 		text-align: center;
 	}
-
-	/* #form-container {
-		background-color: #fff;
-		border: 1px solid #ddd;
-		padding: 20px;
-		max-width: 75%;
-	}
-
-	form {
-		width: 500px;
-		margin: 0 auto;
-		background-color: #fff;
-		padding: 20px;
-		border-radius: 5px;
-		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-	}
-
-	label {
-		display: block;
-		margin-bottom: 5px;
-		font-weight: bold;
-	}
-
-	input[type="text"],
-	input[type="email"],
-	textarea {
-		width: 100%;
-		padding: 10px;
-		margin-bottom: 10px;
-		border: 1px solid #ddd;
-		border-radius: 4px;
-	}
-
-	button[type="submit"] {
-		background-color: #0077b6;
-		color: #fff;
-		padding: 10px 20px;
-		border: none;
-		border-radius: 4px;
-		cursor: pointer;
-	}
-
-	fieldset {
-		border: none;
-		margin: 0;
-		padding: 0;
-		/* Otros estilos que desees resetear 
-	} */
 
 	fieldset {
 		border: none;
@@ -232,30 +191,19 @@ import Layout from "../layouts/Layout.astro";
 	} 
 
 	input[type="submit"] {
-		background-color: #0077b6;
-		color: #fff;
 		padding: 10px 20px;
 		border: none;
-		border-radius: 4px;
 		cursor: pointer;
+		background-color: #2092bc;
+		color: white;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 16px;
+		transition: background-color 0.3s;
 	}
 
 	/* Mateo */
 	/* Fuente: https://porfoliomateo.netlify.app/contacto/*/
-	.container {
-		max-width: 600px;
-		margin: 20px auto;
-		padding: 20px;
-		background-color: #fff;
-		border-radius: 10px;
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	}
-
-	h2 {
-		text-align: center;
-		margin-bottom: 30px;
-		color: #333;
-	}
 
 	form {
 		max-width: 400px;
@@ -283,17 +231,6 @@ import Layout from "../layouts/Layout.astro";
 	textarea {
 		resize: vertical;
 		height: 100px;
-	}
-
-	input[type="submit"] {
-		background-color: #2092bc;
-		color: white;
-		padding: 10px 20px;
-		border: none;
-		border-radius: 5px;
-		cursor: pointer;
-		font-size: 16px;
-		transition: background-color 0.3s;
 	}
 
 	input[type="submit"]:hover {
