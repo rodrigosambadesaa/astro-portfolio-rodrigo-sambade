@@ -4,57 +4,54 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Contacto">
 	<header tabindex="0">
-		<nav style="text-align: right;" tabindex="1">
-			<a class="enlaceNavbar" href="../" tabindex="2">Página principal</a>
+		<nav tabindex="1" style="text-align: right;">
+			<a class="enlaceNavbar" href="../">Página principal</a>
 		</nav>
-		<h1 tabindex="3">Portafolio de Rodrigo Sambade Saá</h1>
+		<h1 tabindex="2">Portafolio de Rodrigo Sambade Saá</h1>
 	</header>
-	<main tabindex="4">
-		<h1 id="cabeceraContacto" tabindex="5">Contacto</h1>
+	<main tabindex="3">
+		<h1 tabindex="4" id="cabeceraContacto">Contacto</h1>
 
-		<div tabindex="6" id="form-container">
+		<div tabindex="5" id="form-container">
 			<form
 				method="POST"
 				action="https://formsubmit.co/rodrigosambadesaa@gmail.com"
-				tabindex="7"
 			>
-				<fieldset tabindex="8">
-					<legend tabindex="9">Datos necesarios</legend>
-					<div tabindex="10">
-						<label for="name" tabindex="10">Nombre</label>
+				<fieldset>
+					<legend>Datos necesarios</legend>
+					<div>
+						<label for="name">Nombre</label>
 						<input
 							type="text"
 							id="name"
 							name="name"
 							required
 							aria-label="Nombre"
-							tabindex="11"
 						/>
 					</div>
-					<div tabindex="12">
-						<label for="email" tabindex="13">Correo</label>
+					<div>
+						<label for="email">Correo</label>
 						<input
 							type="email"
 							id="email"
 							name="email"
 							required
 							aria-label="Correo"
-							tabindex="14"
 						/>
 					</div>
-					<div tabindex="15">
-						<label for="message" tabindex="16">Mensaje</label>
+					<div>
+						<label for="message">Mensaje</label>
 						<textarea
 							id="message"
 							name="message"
 							required
 							aria-label="Mensaje"
-							tabindex="17"></textarea>
+						></textarea>
 					</div>
 				</fieldset>
-				<fieldset tabindex="18">
+				<fieldset>
 					<legend>Enviar</legend>
-					<input type="submit" tabindex="19" value="Enviar"></input>
+					<input type="submit" value="Enviar"></input>
 				</fieldset>
 			</form>
 		</div>
